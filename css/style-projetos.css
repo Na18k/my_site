@@ -1,0 +1,242 @@
+body {
+	background: #1C1C1C;
+	font-family: Calibri;
+}
+/*Cabeçario*/
+	header {
+		background: #363636;
+		padding: 20px 0;
+	}
+	.container {
+		position: relative;
+		width: 940px;
+		margin: 0 auto;
+	}
+	header .logo {
+		width: 3%;
+		font-size: 20px;
+		font-weight: bold;
+		color: white;
+	}
+	header img:hover{
+		transition: 300ms;
+		color: lightgray;
+		box-shadow: 8px 8px 8px 0 #000000;
+	}
+	header h1 {
+		text-decoration: underline;
+	}
+	header h1:hover {
+		transition: 300ms;
+		color: lightgray;
+		text-decoration: underline;
+	}
+	nav {
+		position: absolute;
+		top: 10px;
+		right: 100px;
+	}
+	nav li {
+		display: inline;
+		margin: 0 0 0 15px;
+	}
+	nav a {
+		text-transform: uppercase;
+		color: white;
+		font-weight: bold;
+		font-size: 22px;
+		text-decoration: none;
+		border: 2px solid;
+		padding: 2px 2px;
+	}
+	nav a:hover {
+		transition: 300ms;
+		color: lightgray;
+		box-shadow: 8px 8px 8px 0 #000000;
+		border: 2px solid white;
+	}
+/*=========*/
+
+/*Main*/
+	main {
+		font-family: 'Fira Code', monospace;
+	}
+	.projetos {
+		width: 940px;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	.projetos li {
+		color: white;
+		display: inline-block;
+		text-align: center;
+		width: 30%;
+		vertical-align: top;
+		margin: 10px 10px 10px 10px;
+		padding: 30px 20px;
+		box-sizing: border-box;
+		border: 2px solid #000000;
+		border-radius: 10px;
+	}
+	.projetos li a {
+		text-decoration: none;
+	}
+	.projetos img {
+		border: 2px solid black;
+		width: 100%;
+		margin: 20px 0 20px 0;
+	}
+	.projetos a li:hover {
+		transition: 400ms;
+		border-color: purple;
+		color: purple;
+	}
+	.projetos li:active {
+		transition: 400ms;
+		border-color: #088C19;
+	}
+	.projetos li:hover h2 {
+		transition: 400ms;
+		font-size: 34px;
+		padding: 0px 0px;
+	}
+	.projetos h2 {
+		font-size: 30px;
+		font-weight: bold;
+		padding: 2px 2px;
+		margin: 4px 4px 4px;
+	}
+	.projetos .desc_projeto {
+		margin-top: 20px;
+		font-size: 18px;
+	}
+	.projetos .data_projeto {
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 20px;
+		border: 2px solid gray;
+		opacity: 0.3 border;
+	}
+
+	/*--*/
+
+	.modificados {
+		margin: 10px 10px 10px 10px;
+		padding: 5px 5px;
+		border: 4px solid gray;
+	}
+	.modificados h3 {
+		margin: 4px 4px 4px 4px;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.modificados ul {
+		width: 940px;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	.modificados li a {
+		text-decoration: none;
+	}
+	.modificados ul li {
+		display: inline-block;
+		text-align: center;
+		width: 30%;
+		vertical-align: top;
+		margin: 10px 10px 10px 10px;
+		padding: 30px 20px;
+		box-sizing: border-box;
+		border: 2px solid #000000;
+		border-radius: 10px;
+	}
+	.modificados ul li h2 {
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.modificados h2 {
+		padding: 2px 2px;
+	}
+	.modificados img {
+		border: 2px solid black;
+		margin: 20px 0 20px 0;
+		width: 100%;
+	}
+	.modificados .desc_projetos {
+		margin-top: 20px;
+		font-size: 18px;
+		background: white;
+	}
+	.modificados .data_projetos {
+		font-size: 22px;
+		font-weight: bold;
+		margin: 20px 0 20px 0;
+	}
+	.modificados li:hover {
+		transition: 400ms;
+		border-color: purple;
+	}
+	.modificados a li:hover h2 {
+		transition: 400ms;
+		border-color: #C78C19;
+		padding: 0px 0px;
+		font-size: 34px;
+	}
+/*FIM DA MAIN*/
+
+/*Rodapé*/
+	footer {
+		background: #363636;
+		margin: 4px 4px;
+		border: 2px solid #A9A9A9;
+		text-align: center;
+		padding: 10px 0;
+	}
+	footer img {
+		width: 4%;
+	}
+	footer .logo:hover {
+		transition: 300ms;
+		color: lightgray;
+		box-shadow: 4px 4px 8px 0 #000000;
+	}
+	footer p {
+		color: white;
+		font-size: 13px;
+		margin: 20px 20px 20px 20px;
+		text-decoration: none;
+
+	}
+	/*Área Social*/
+	.social {
+		background: #4F4F4F;
+		padding: 10px 10px;
+		margin: 10px 10px 10px 10px;
+		border: 4px solid #696969
+	}
+	.social img {
+		width: 3%;
+		padding: 2px 2px;
+		border: 2px solid #4F4F4F;
+		margin: 0 5px 0 5px;
+	}
+	.social img:hover {
+		transition: 400ms;
+		border: 2px solid white;
+	}
+	/**/
+	.link-footer a {
+		text-transform: uppercase;
+		color: white;
+		font-weight: bold;
+		font-size: 15px;
+		text-decoration: none;
+	}
+	.link-footer a:hover {
+		transition: 300ms;
+		color: lightgray;
+		text-decoration: underline;
+	}
+/*======*/
