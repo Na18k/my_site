@@ -1,2 +1,1 @@
-# my_site
-Logo Logo postarei meu site aqui
+<img src="img/omori.gif" align="center">
