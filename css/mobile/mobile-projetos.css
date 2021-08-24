@@ -45,6 +45,9 @@
 		}
 
  	/*Conteudo*/
+ 		a {
+ 			text-decoration: none;
+ 		}
  		main {
  			display: flex;
  			flex-direction: column;
@@ -175,6 +178,9 @@
 		}
 
  	/*Conteudo*/
+ 		a {
+ 			text-decoration: none;
+ 		}
  		main {
  			display: flex;
  			flex-direction: column;
