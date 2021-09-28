@@ -5,6 +5,7 @@
 
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/reset.css">
+	<meta name="viewport" content="width=device-width">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,48 +21,93 @@
 			font-weight: bold;
 			font-size: 80px;
 			text-align: center;
+			color: white;
+			margin: 30px 0 30px 0;
 		}
 		img {
 			width: 20%;
 			margin: 0px 10px 0px 10px;
 			border: 4px solid black;
 		}
-		div {
-			line-height: 125%;
-			color: white;
+		.cabecario, .conteudo {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
 			background: #363636;
 			padding: 18px 18px;
-			font-size: 15px;
 			border-radius: 6px;
 			margin: 30px 100px 0px 100px;
+		}
+		.cabecario p, .conteudo p {
+			line-height: 125%;
+			color: white;
+			font-size: 15px;
 			text-align: center;
 		}
 		.corpo {
-			padding: 50px 100px;
-			border: 2px solid #A9A9A9;
+			padding: 50px 50px;
 		}
 		a {
 			text-decoration: none;
 			color: white;
 			background: green;
-			padding: 5px 5px;
+			padding: 10px 10px;
 			border: 2px solid white;
 		}
 		a:hover {
 			transition: 400ms;
 			box-shadow: 8px 8px 8px 0 #000000; 
 		}	
+		@media(max-width: 768px) {
+			.cabecario, .conteudo {
+				background: #363636;
+				padding: 18px 18px;
+				margin: 10px 10px 0px 10px;
+			}
+			.cabecario p, .conteudo p {
+				line-height: 125%;
+				font-size: 19px;
+			}
+			.corpo {
+				padding: 10px 10px;
+			}
+			img {
+				width: 45%;
+			}
+		}
+		@media(min-width: 768px) and (max-width: 1112px) {
+			.cabecario, .conteudo {
+				background: #363636;
+				padding: 18px 18px;
+				margin: 10px 10px 0px 10px;
+			}
+			.cabecario p, .conteudo p {
+				line-height: 125%;
+				font-size: 40px;
+			}
+			.corpo {
+				padding: 10px 10px;
+			}
+			img {
+				width: 45%;
+			}
+			a {
+				font-size: 50px;
+			}
+		}
 	</style>
 </head>
 <body>
 	<main>
 		<div class="corpo">
-			<img src="img/omori.gif" align="center">
-			<div>
+			<div class="cabecario">
+				<img src="img/omori.gif" align="center">
 				<h1>404</h1>
 			</div>
 			
-			<div>
+			<div class="conteudo">
 				<p>Arquivo não encontrado</p>
 				<p>O site configurado neste endereço não contém o arquivo solicitado.</p>
 				<p>Por favor, entre em contato com o desenvolvedor</p>
