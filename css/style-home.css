@@ -37,7 +37,7 @@ body {
 		right: 100px;
 	}
 	nav li {
-		display: inline;
+		display: inline-block;
 		margin: 0 0 0 15px;
 	}
 	nav a {
@@ -46,21 +46,22 @@ body {
 		font-weight: bold;
 		font-size: 22px;
 		text-decoration: none;
-		border: 2px solid;
+		border: 2px solid transparent;
+		background: rgba(0,0,0, 0.1);
 		padding: 2px 2px;
 	}
 	nav a:hover {
-		transition: 300ms;
+		transition: 400ms;
 		color: lightgray;
-		box-shadow: 8px 8px 8px 0 #000000;
-		border: 2px solid white;
+		box-shadow: 4px 4px 4px 0 #000000;
+		border: 2px solid transparent;
 	}
 /*=========*/
 
 /*MAIN*/
 	main {
 		font-family: 'Fira Code', monospace;
-		background: linear-gradient(#1C1C1C 25%,#696969 );
+		background: linear-gradient(#1C1C1C 25%,#696969);
 	}
 
 	.banner {
@@ -168,54 +169,74 @@ body {
 /*Rodapé*/
 	footer {
 		background: #363636;
-		margin: 4px 4px;
-		border: 2px solid #A9A9A9;
-		text-align: center;
-		padding: 10px 0;
+		padding: 20px 8px;
+	}
+	footer ul {
+		width: 25%;
 	}
 	footer img {
 		width: 4%;
 	}
-	footer .logo:hover {
-		transition: 300ms;
-		color: lightgray;
-		box-shadow: 4px 4px 8px 0 #000000;
-	}
-	footer p {
-		color: white;
-		font-size: 13px;
-		margin: 20px 20px 20px 20px;
-		text-decoration: none;
-
-	}
-	/*Área Social*/
-	.social {
-		background: #4F4F4F;
+	/*Área footer*/
+	.footer {
+		display: flex;
+		justify-content: space-between;
 		padding: 10px 10px;
-		margin: 10px 10px 10px 10px;
-		border: 4px solid #696969
+	}
+	.social {
+		display: flex;
+		justify-content: space-around;
+		align-items: center
+	}
+	.social li {
+		margin-left: 10px;
+	}
+	.social i {
+		color: black;
+		font-size: 35px;
 	}
 	.social img {
-		width: 3%;
+		width: 30px;
 		padding: 2px 2px;
 		border: 2px solid #4F4F4F;
 		margin: 0 5px 0 5px;
 	}
-	.social img:hover {
+	.social li i:hover {
 		transition: 400ms;
-		border: 2px solid white;
+		color: white;
 	}
 	/**/
-	.link-footer a {
-		text-transform: uppercase;
-		color: white;
+	.link-footer, .footer-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.link-footer, .footer-page {
+		text-align: left;
+		/*list-style: square;*/
+		line-height: 20px;
+	}
+	footer a {
+		/*text-transform: uppercase;*/
+		color: #A9A9A9;
 		font-weight: bold;
 		font-size: 15px;
 		text-decoration: none;
 	}
-	.link-footer a:hover {
+	.link-footer a:before, .footer-page a:before {
+		content: "|";
+	}
+	footer a:hover {
 		transition: 300ms;
-		color: lightgray;
-		text-decoration: underline;
+		color: #A020F0;
+	}
+	.link-footer a:hover, .footer-page a:hover {
+		content: "|" lightblue;
+	}
+	footer h4 {
+		color: #808080;
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 10px;
 	}
 /*======*/

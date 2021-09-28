@@ -46,27 +46,31 @@ body {
 		font-weight: bold;
 		font-size: 22px;
 		text-decoration: none;
-		border: 2px solid;
+		border: 2px solid transparent;
+		background: rgba(0,0,0, 0.1);
 		padding: 2px 2px;
 	}
 	nav a:hover {
-		transition: 300ms;
+		transition: 400ms;
 		color: lightgray;
-		box-shadow: 8px 8px 8px 0 #000000;
-		border: 2px solid white;
+		box-shadow: 4px 4px 4px 0 #000000;
+		border: 2px solid transparent;
 	}
 /*=========*/
 
 /*Main*/
+	a {
+		text-decoration: none;
+	}
 	main {
 		font-family: 'Fira Code', monospace;
 	}
-	.projetos {
+	.projetos, .modificados {
 		width: 940px;
 		margin: 0 auto;
-		padding: 50px 0;
+		padding: 15px 0;
 	}
-	.projetos li {
+	.projetos li, .modificados li {
 		color: white;
 		display: inline-block;
 		text-align: center;
@@ -75,168 +79,164 @@ body {
 		margin: 10px 10px 10px 10px;
 		padding: 30px 20px;
 		box-sizing: border-box;
-		border: 2px solid #000000;
-		border-radius: 10px;
+		border: 4px solid transparent;
+		border-radius: 15px;
+		background: rgba(255,255,255,0.01);
 	}
-	.projetos li a {
+	.projetos li a, .modificados li a {
 		text-decoration: none;
 	}
-	.projetos img {
+	.projetos img, .modificados img {
 		border: 2px solid black;
+		border-radius: 15px;
 		width: 100%;
-		margin: 20px 0 20px 0;
+		margin: 20px 0 8px 0;
 	}
-	.projetos a li:hover {
-		transition: 400ms;
-		border-color: purple;
+	.projetos li:hover, .modificados li:hover {
+		transition: 600ms;
+		border-radius: 15px;
+		border-image: linear-gradient(140deg, rgba(0,0,0,1), rgba(229,0,255,1)) 1;
 		color: purple;
+		box-shadow: 0px 0px 18px black;
 	}
-	.projetos li:active {
+	.projetos li:active, .modificados li:active {
 		transition: 400ms;
 		border-color: #088C19;
 	}
-	.projetos li:hover h2 {
-		transition: 400ms;
-		font-size: 34px;
-		padding: 0px 0px;
-	}
-	.projetos h2 {
-		font-size: 30px;
+	.projetos h2, .modificados h2 {
+		font-size: 16px;
 		font-weight: bold;
 		padding: 2px 2px;
 		margin: 4px 4px 4px;
 	}
-	.projetos .desc_projeto {
-		margin-top: 20px;
-		font-size: 18px;
+	.botoesProjeto {
+		margin-top: 10px;
 	}
-	.projetos .data_projeto {
-		font-size: 20px;
-		font-weight: bold;
-		margin-top: 20px;
-		border: 2px solid gray;
-		opacity: 0.3 border;
+	.botaoProjetoFonte, .botaoProjeto {
+		width: 10%;
+		text-decoration: none;
+		color: transparent;
+		background: transparent;
+		margin: 10px 5px 5px 5px;
+		line-height: 40px;
+		padding: 10px 10px;
+		border: 2px solid transparent;
+		border-radius: 6px;
+	}
+	.botaoProjetoFonte:hover, .botaoProjeto:hover {
+		border-color: purple;
+	}
+	.projetos li:hover .botaoProjetoFonte,
+	.modificados li:hover .botaoProjetoFonte,
+	.projetos li:hover .botaoProjeto,
+	.modificados li:hover .botaoProjeto {
+		transition: 600ms;
+		color: darkgray;
+		background: rgba(169,169,169, 0.08);
+	}
+	.compatiblidade {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.tagMobile {
+		background: #6A5ACD;
+		padding: 6px 6px;
+		border-radius: 15px;
+		color: white;
+		z-index: 10;
+	}
+	.tagComputer {
+		background: #6A5ACD;
+		padding: 6px 6px;
+		border-radius: 15px;
+		color: white;
+		z-index: 10;
 	}
 
 	/*--*/
-
-	.modificados {
-		margin: 10px 10px 10px 10px;
-		padding: 5px 5px;
-		border: 4px solid gray;
-	}
 	.modificados h3 {
 		margin: 4px 4px 4px 4px;
 		text-transform: uppercase;
 		text-align: center;
 		color: white;
-		font-size: 30px;
+		font-size: 26px;
 		font-weight: bold;
-	}
-	.modificados ul {
-		width: 940px;
-		margin: 0 auto;
-		padding: 50px 0;
-	}
-	.modificados li a {
-		text-decoration: none;
-	}
-	.modificados ul li {
-		display: inline-block;
-		text-align: center;
-		width: 30%;
-		vertical-align: top;
-		margin: 10px 10px 10px 10px;
-		padding: 30px 20px;
-		box-sizing: border-box;
-		border: 2px solid #000000;
-		border-radius: 10px;
-	}
-	.modificados ul li h2 {
-		font-size: 30px;
-		font-weight: bold;
-	}
-	.modificados h2 {
-		padding: 2px 2px;
-	}
-	.modificados img {
-		border: 2px solid black;
-		margin: 20px 0 20px 0;
-		width: 100%;
-	}
-	.modificados .desc_projetos {
-		margin-top: 20px;
-		font-size: 18px;
-		background: white;
-	}
-	.modificados .data_projetos {
-		font-size: 22px;
-		font-weight: bold;
-		margin: 20px 0 20px 0;
-	}
-	.modificados li:hover {
-		transition: 400ms;
-		border-color: purple;
-	}
-	.modificados a li:hover h2 {
-		transition: 400ms;
-		border-color: #C78C19;
-		padding: 0px 0px;
-		font-size: 34px;
 	}
 /*FIM DA MAIN*/
 
 /*Rodapé*/
 	footer {
 		background: #363636;
-		margin: 4px 4px;
-		border: 2px solid #A9A9A9;
-		text-align: center;
-		padding: 10px 0;
+		padding: 20px 8px;
+	}
+	footer ul {
+		width: 25%;
 	}
 	footer img {
 		width: 4%;
 	}
-	footer .logo:hover {
-		transition: 300ms;
-		color: lightgray;
-		box-shadow: 4px 4px 8px 0 #000000;
-	}
-	footer p {
-		color: white;
-		font-size: 13px;
-		margin: 20px 20px 20px 20px;
-		text-decoration: none;
-
-	}
-	/*Área Social*/
-	.social {
-		background: #4F4F4F;
+	/*Área footer*/
+	.footer {
+		display: flex;
+		justify-content: space-between;
 		padding: 10px 10px;
-		margin: 10px 10px 10px 10px;
-		border: 4px solid #696969
+	}
+	.social {
+		display: flex;
+		justify-content: space-around;
+		align-items: center
+	}
+	.social li {
+		margin-left: 10px;
+	}
+	.social i {
+		color: black;
+		font-size: 35px;
 	}
 	.social img {
-		width: 3%;
+		width: 30px;
 		padding: 2px 2px;
 		border: 2px solid #4F4F4F;
 		margin: 0 5px 0 5px;
 	}
-	.social img:hover {
+	.social li i:hover {
 		transition: 400ms;
-		border: 2px solid white;
+		color: white;
 	}
 	/**/
-	.link-footer a {
-		text-transform: uppercase;
-		color: white;
+	.link-footer, .footer-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.link-footer, .footer-page {
+		text-align: left;
+		/*list-style: square;*/
+		line-height: 20px;
+	}
+	footer a {
+		/*text-transform: uppercase;*/
+		color: #A9A9A9;
 		font-weight: bold;
 		font-size: 15px;
 		text-decoration: none;
 	}
-	.link-footer a:hover {
+	.link-footer a:before, .footer-page a:before {
+		content: "|";
+	}
+	footer a:hover {
 		transition: 300ms;
-		color: lightgray;
-		text-decoration: underline;
+		color: #A020F0;
+	}
+	.link-footer a:hover, .footer-page a:hover {
+		content: "|" lightblue;
+	}
+	footer h4 {
+		color: #808080;
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 10px;
 	}
 /*======*/
