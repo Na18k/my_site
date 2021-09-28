@@ -55,6 +55,9 @@
 			flex-direction: column;
 			justify-content: center;
 		}
+		.conteudo-principal p {
+			font-size: 20px;
+		}
 		.conteudoPrimario .conteudo-principal {
 			align-items: center;
 		}
@@ -95,19 +98,28 @@
 		}
 
 	/*Footer*/
-		footer img {
-			width: 15%;
+		.footer {
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
 		}
-
-		.social img {
-			width: 18%;
+		.social i {
+			font-size: 50px;
+		}
+		.footer-page, .link-footer {
+			margin-top: 10px;
+			width: 90%;
+		}
+		.footer-page, .link-footer {
+			margin-top: 10px;
+			width: 90%;
 		}
 		.social .link-social {
 			display: flex;
 			flex-wrap: wrap;
 		}
-		.social .link-footer a {
-			font-size: 20px;
+		.link-footer a, .footer-page a {
+			font-size: 22px;
 		}
 
 
@@ -134,8 +146,8 @@
 	/*Header*/
 
 		header {
-				padding: 10px 0;
-				height: 200px;
+			padding: 10px 0;
+			height: 200px;
 		}
 		.container {
 			width: 90%;
@@ -227,19 +239,28 @@
 		}
 
 	/*Footer*/
-		footer img {
-			width: 15%;
+		.footer {
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
 		}
-
-		.social img {
-			width: 18%;
+		.social i {
+			font-size: 50px;
+		}
+		.footer-page, .link-footer {
+			margin-top: 10px;
+			width: 90%;
+		}
+		.footer-page, .link-footer {
+			margin-top: 10px;
+			width: 90%;
 		}
 		.social .link-social {
 			display: flex;
 			flex-wrap: wrap;
 		}
-		.social .link-footer a {
-			font-size: 20px;
+		.link-footer a, .footer-page a {
+			font-size: 22px;
 		}
 
 
