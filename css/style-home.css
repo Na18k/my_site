@@ -6,23 +6,25 @@ html {
 body {
 	padding: 2px 2px;
 	border-radius: 15px;
-	animation: shadow-fundo 5s infinite;
+	/*animation: shadow-fundo 5s infinite;*/
 	border: 2px solid transparent;
 }
 body {
 	transition: 4s;
+	box-shadow: 0px 0px 0px purple;
 	border-color: transparent;
 }
 body:hover {
 	transition: 2s;
 	border: 2px solid purple;
+	box-shadow: 0px 0px 10px purple;
 }
 @keyframes shadow-fundo {
 	0% {
 		box-shadow: 0px 0px 10px purple;
 	}
 	50% {
-		box-shadow: 0px 0px 50px purple;
+		box-shadow: 0px 0px 20px purple;
 	}
 	100% {
 		box-shadow: 0px 0px 10px purple;
