@@ -1,0 +1,270 @@
+@media(max-width: 768px) {
+
+	/*Header*/
+		header {
+				padding: 10px 0;
+				height: 280px;
+		}
+		.container {
+			width: 90%;
+			height: 90%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			/*flex-wrap: wrap;*/
+		}	
+		.logoLink {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 10px;
+			padding: 10px 10px;
+		}
+		header .logo {
+			width: 90px;
+			height: 90px;
+		}
+		.container nav {
+			position: initial;
+			width: 48%;
+		}
+		header .container nav ul {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		.container nav ul li {
+			margin-top: 20px;
+		}
+
+		header .container nav a {
+			font-size: 30px;
+		}
+		
+		main {
+			padding: 0px 0px;
+			width: 100%;
+		}
+
+ 	/*Conteudo*/
+		.alert {
+			width: 100%;
+			padding: 0px 0px;
+		}
+		.conteudo-principal {
+			padding: 0px 0px;
+			margin: 4px 4px 4px 4px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.conteudo-principal p {
+			font-size: 20px;
+		}
+		.conteudoPrimario .conteudo-principal {
+			align-items: center;
+		}
+		.banner2 {
+			width: 80%;
+			margin: 0;
+		}
+		.marc-historia {
+			display: flex;
+	  		flex-wrap: wrap; 
+	  		align-items: center;
+		}
+		.marc-historia .marc-especial {
+			width: 100%;
+		}
+		.marc-historia a {
+			width: 31.3%;
+	  		margin: 1%;
+		}
+
+		.img-historia {
+			width: 90%;
+	  		margin: 1%;
+		}
+
+		hr {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.img-1223 {
+			display: flex;
+			justify-content: center;
+		}
+		.organizacao1223 {
+			width: 75%;
+			float: initial;
+			margin: 10px 0 10px 0;
+		}
+
+	/*Footer*/
+		.footer {
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.social i {
+			font-size: 50px;
+		}
+		.footer-page, .link-footer {
+			margin-top: 10px;
+			width: 90%;
+		}
+		.footer-page, .link-footer {
+			margin-top: 10px;
+			width: 90%;
+		}
+		.social .link-social {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.link-footer a, .footer-page a {
+			font-size: 22px;
+		}
+
+
+}
+
+/* ----------- iPad Pro ----------- */
+
+@media(min-width: 768px) and (max-width: 1112px) {
+
+	p {
+		font-size: 35px;
+	}
+	.marc-especial {
+		font-size: 48px;
+	}
+	.alert p,  h2 {
+		font-size: 35px;
+		line-height: 175%;
+	}
+
+	footer .social .link-footer a {
+		font-size: 50px;
+	}
+	/*Header*/
+
+		header {
+			padding: 10px 0;
+			height: 380px;
+		}
+		.container {
+			width: 90%;
+			height: 90%;
+			position: initial;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			/*flex-wrap: wrap;*/
+
+		}	
+		.logoLink {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 10px;
+			padding: 10px 10px;
+		}
+		header .logo {
+			width: 90px;
+			height: 90px;
+		}
+		.container nav {
+			position: initial;
+			width: 48%;
+		}
+		header .container nav ul {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		header .container nav a {
+			font-size: 50px;
+		}
+		
+		main {
+			padding: 0px 0px;
+			width: 100%;
+		}
+
+ 	/*Conteudo*/
+		.alert {
+			width: 98%;
+			padding: 10px 10px;
+		}
+		.conteudo-principal {
+			padding: 0px 0px;
+			margin: 8px 8px 8px 8px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.conteudoPrimario .conteudo-principal {
+			align-items: center;
+		}
+		.banner2 {
+			width: 80%;
+			margin: 0;
+		}
+		.marc-historia {
+			display: flex;
+	  		flex-wrap: wrap; 
+	  		align-items: center;
+		}
+		.marc-historia .marc-especial {
+			width: 100%;
+		}
+		.marc-historia a {
+			width: 31.3%;
+	  		margin: 1%;
+		}
+
+		.img-historia {
+			width: 90%;
+	  		margin: 1%;
+		}
+
+		hr {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.img-1223 {
+			display: flex;
+			justify-content: center;
+		}
+		.organizacao1223 {
+			width: 75%;
+			float: initial;
+			margin: 10px 0 10px 0;
+		}
+
+	/*Footer*/
+		.footer {
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.social i {
+			font-size: 50px;
+		}
+		.footer-page, .link-footer {
+			margin-top: 10px;
+			width: 90%;
+		}
+		.footer-page, .link-footer {
+			margin-top: 10px;
+			width: 90%;
+		}
+		.social .link-social {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.link-footer a, .footer-page a {
+			font-size: 22px;
+		}
+
+
+}
+}
