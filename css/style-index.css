@@ -40,18 +40,22 @@ h1 {
 	text-align: justify;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	font-weight: 800;
 	font-size: 0.8em;
 	line-height: 1.2em;
 	/*align-items: center;*/
 }
 .apresentacao-inicio-avatar {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
 }
 .apresentacao-inicio-texto {
 	width: 60%;
+	font-size: 1.5em;
+	line-height: 1.4em;
+
 }
 
 /* LINGUAGENS E FERRAMENTAS */
