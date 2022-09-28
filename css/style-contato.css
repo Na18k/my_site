@@ -1,0 +1,39 @@
+/* Página Cotatos */
+/* ==== */
+
+.main-sections-contato {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+h2 {
+	text-align: center;
+}
+
+.main-section-contatos-buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px 20px 20px 20px;
+}
+.main-section-contatos-buttons .contato-buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.contato-buttons a {
+	margin: 10px 10px 10px 10px;
+}
+.contato-buttons a:hover {
+	transition: 400ms;
+	box-shadow: 8px 8px 8px black;
+}
+.text-email {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 10px;
+	font-weight: 800;
+}

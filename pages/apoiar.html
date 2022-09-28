@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="html-dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Kainan H. | Apoiar</title>
+
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="../css/reset.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/style-default.css">
+	<link rel="stylesheet" href="../css/style-index.css">
+	<link rel="stylesheet" href="../css/style-apoiar.css">
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="../index.html" class="link-header"><img src="../img/logo.png" alt="Logo Na18k" class="logo"></a></li>
+			<li><a href="../index.html" class="link-header">Home</a></li>
+			<li><a href="servicos.html" class="link-header">Serviços</a></li>
+			<li><a href="sobre.html" class="link-header">Sobre</a></li>
+			<li><a href="contato.html" class="link-header-contato">Contato</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<section class="main-sections-apoiar">
+			<h2 class="titulo-section">Apoiar:</h2>
+			<p class="texto-apoiar">No momento não está disponível apoiar Na18k, apenas projetos separadamente!</p>
+		</section>
+		
+	</main>
+
+	<footer>
+
+		<section class="section-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="pages/servicos.html">Serviços</a></li>
+				<li><a href="pages/sobre.html">Sobre</a></li>
+				<li><a href="pages/contato.html">Contato</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://github.com/Na18k">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/kainan-henrique">LinkedIn</a></li>
+				<li><a href="pages/apoiar.html">Apoiar</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://github.com/Thex1223">Thex 1223</a></li>
+				<li><a href="https://kainanhenriq.blogspot.com">Blog Na18k</a></li>
+			</ul>
+		</section>
+
+		<section class="section-copyrights">
+			<p>Copyright ⓒ 2022 <b id="ano-copyright"></b> Kainan H. [ Na18k ] todos os direitos reservados.</p>
+		</section>
+
+	</footer>
+
+</body>
+<script type="text/javascript">
+	// Altera e autualiza a data no rodapé Copyrigth
+	var copyright = document.getElementById("ano-copyright");
+	var dataAtual = new Date();
+	var ano = dataAtual.getFullYear();
+	if(ano !== 2022) {
+		copyright.textContent = `- ${ano}`;
+	}	
+</script>
+</html>

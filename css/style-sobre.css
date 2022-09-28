@@ -1,0 +1,19 @@
+
+.main-section-historia {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 20px 20px 20px;
+}
+
+.texto-historia-container {
+	padding: 10px 10px 10px 10px;
+}
+
+.texto-historia {
+	color: lightgray;
+	font-size: 0.9em;
+	text-align: justify;
+	font-weight: bold;
+	line-height: 1.4em;
+}

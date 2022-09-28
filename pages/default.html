@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="html-dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Kainan H. | ...</title>
+
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="../css/reset.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/style-default.css">
+	<link rel="stylesheet" href="../css/style-index.css">
+	<link rel="stylesheet" href="../css/style-mobile.css">
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="../index.html" class="link-header logo"><img src="../img/logo.png" alt="Logo Na18k" class="logo"></a></li>
+			<li class="mostra-mobile"><button id="button-menu">Menu</button></li>
+			<li><a href="../index.html" class="link-header esconder-mobile" id="esconder-mobile-0">Home</a></li>
+			<li><a href="servicos.html" class="link-header esconder-mobile" id="esconder-mobile-1">Serviços</a></li>
+			<li><a href="sobre.html" class="link-header esconder-mobile" id="esconder-mobile-2">Sobre</a></li>
+			<li><a href="contato.html" class="link-header-contato esconder-mobile" id="esconder-mobile-3">Contato</a></li>
+		</ul>
+	</header>
+
+	<main>
+		
+	</main>
+
+	<footer>
+
+		<section class="section-links">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://github.com/Na18k">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/kainan-henrique">LinkedIn</a></li>
+				<li><a href="apoiar.html">Apoiar</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://github.com/Thex1223">Thex 1223</a></li>
+				<li><a href="https://kainanhenriq.blogspot.com">Blog Na18k</a></li>
+			</ul>
+		</section>
+
+		<section class="section-copyrights">
+			<p>Copyright ⓒ 2022 <b id="ano-copyright"></b> Kainan H. [ Na18k ] todos os direitos reservados.</p>
+		</section>
+
+	</footer>
+
+</body>
+<script type="text/javascript" src="../js/menu-mobile.js" async></script>
+<script type="text/javascript">
+	// Altera e autualiza a data no rodapé Copyrigth
+	var copyright = document.getElementById("ano-copyright");
+	var dataAtual = new Date();
+	var ano = dataAtual.getFullYear();
+	if(ano !== 2022) {
+		copyright.textContent = `- ${ano}`;
+	}	
+</script>
+</html>

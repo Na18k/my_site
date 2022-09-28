@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="html-dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Kainan H. | Contato</title>
+
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="../css/reset.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/style-default.css">
+	<link rel="stylesheet" href="../css/style-contato.css">
+	<link rel="stylesheet" href="../css/style-mobile.css">
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="../index.html" class="link-header logo"><img src="../img/logo.png" alt="Logo Na18k" class="logo"></a></li>
+			<li class="mostra-mobile"><button id="button-menu">Menu</button></li>
+			<li><a href="../index.html" class="link-header esconder-mobile" id="esconder-mobile-0">Home</a></li>
+			<li><a href="servicos.html" class="link-header esconder-mobile" id="esconder-mobile-1">Serviços</a></li>
+			<li><a href="sobre.html" class="link-header esconder-mobile" id="esconder-mobile-2">Sobre</a></li>
+			<li><a href="contato.html" class="link-header-contato esconder-mobile" id="esconder-mobile-3">Contato</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<section class="main-sections-contato">
+			<h2 class="titulo-section">Contato</h2>
+		</section>
+
+		<section class="main-section-contatos-buttons">
+
+			<div class="contato-buttons">
+
+				<a href="https://www.linkedin.com/in/kainanhenriq18/" class="button-linkedin">
+					<img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" alt="">
+				</a>
+
+				<a href="https://api.whatsapp.com/send?phone=5541992072578&text=Olá%20eu%20queria%20*pedir%20um%20serviço*%20%3A)">
+					<img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="">
+
+				</a>
+
+				<a href="https://www.instagram.com/kainanhenriq18/">
+					<img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="">
+				</a>
+
+				<a href="https://twitter.com/na18_k">
+					<img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="">
+				</a>
+
+				<a  href="apoiar.html" linktype="email" href="mailto:kainanhenriq18@hotmail.com?subject=Pedido%20de%20Servi%C3%A7o&amp;body=%3E%3E%20Venho%20atrav%C3%A9s%20do%20seu%20site%2C%20para%20entrar%20em%20contato%20contigo%20%3A)">
+
+					<img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="">
+				</a>
+
+			</div>
+			<p class="text-email">Email: kainanhenriq18@hotmail.com</p>
+
+		</section>
+		
+	</main>
+
+	<footer>
+
+		<section class="section-links">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://github.com/Na18k">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/kainan-henrique">LinkedIn</a></li>
+				<li><a href="apoiar.html">Apoiar</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://github.com/Thex1223">Thex 1223</a></li>
+				<li><a href="https://kainanhenriq.blogspot.com">Blog Na18k</a></li>
+			</ul>
+		</section>
+
+		<section class="section-copyrights">
+			<p>Copyright ⓒ 2022 <b id="ano-copyright"></b> Kainan H. [ Na18k ] todos os direitos reservados.</p>
+		</section>
+
+	</footer>
+
+</body>
+<script type="text/javascript" src="../js/menu-mobile.js" async></script>
+<script type="text/javascript">
+	// Altera e autualiza a data no rodapé Copyrigth
+	var copyright = document.getElementById("ano-copyright");
+	var dataAtual = new Date();
+	var ano = dataAtual.getFullYear();
+	if(ano !== 2022) {
+		copyright.textContent = `- ${ano}`;
+	}	
+</script>
+</html>

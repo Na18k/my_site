@@ -1,0 +1,142 @@
+@media (max-width: 600px) {
+
+	/* STYLE DEFAULT */
+	header ul {
+		flex-direction: column;
+		line-height: 1.6em;
+	}
+	header ul li {
+		margin-bottom: 4px;
+	}
+	.logo {
+		width: 100px;
+		height: 100px;
+	}
+	.link-header, .link-header-contato {
+		font-size: 1.6em;
+	}
+	.esconder-mobile, .esconder-mobile a  {
+		transition: 600ms;
+		opacity: 0;
+		display: none;
+	}
+	.mostra-mobile {
+		transition: 600ms;
+		opacity: 100%;
+		width: 90%;
+		display: flex;
+		justify-content: space-around;
+		animation: mostraMenuAnimado 600ms ease-in;
+	}
+
+	@keyframes mostraMenuAnimado {
+		from {
+			transition: 600ms;
+			opacity: 0;
+			display: none;
+		}
+		to {
+			transition: 600ms;
+			opacity: 100%;
+			width: 90%;
+			display: flex;
+			justify-content: space-around;
+		}
+
+	}
+	.mostra-mobile button {
+		width: 90%;
+		height: 40px;
+		font-size: 1.6em;
+		font-weight: 1000;
+		color: white;
+		background-color: rgba(138,43,226,0.2);
+		border: none;
+		border-radius: 10px;
+	}
+
+
+
+	footer .section-links {
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.6em;
+	}
+	footer .section-links ul {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.section-copyrights {
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+
+	/* STYLE HOME */
+	.container-titulo-header-main {
+		margin-right: 0;
+		align-self: center;
+	}
+	.titilo-inicio {
+		font-size: 1em;
+	}
+	.apresentacao-inicio {
+		flex-direction: column;
+		width: 90%;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.apresentacao-inicio-avatar {
+		margin-bottom: 20px;
+	}
+	.apresentacao-inicio-texto {
+		font-size: 1.6em;
+		width: 90%;
+		line-height: 1.4em;
+		text-align: center;
+	}
+	.containter-linguagens img, .containter-ferramentas img {}
+	
+	.stats-wakatime img {
+		width: 96%;
+	}
+	.stats-wakatime {
+		width: 90%;
+	}
+	.projeto-list {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
+	}
+	.projeto-item {
+		width: 90%;
+	}
+	.containers-servicos {
+		flex-direction: column;
+		align-items: center;
+	}
+	.servicos-item {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	.button-srv {
+		width: 80%;
+		font-size: 1.4em;
+		text-align: center;
+	}
+	.button-srv-servicos {
+		border: none;
+		background: transparent;
+	}
+
+	/* CONTATOS */
+	.main-section-contatos-buttons .contato-buttons {
+		flex-direction: column;
+	}
+	.contato-buttons a img {
+		width: 20em;
+	}
+	.text-email {
+		line-height: 1.4em;
+	}
+}

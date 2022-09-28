@@ -1,0 +1,120 @@
+/* SERVIÇOS */
+.main-sections-servicos {
+	background: linear-gradient(purple, rgb(35, 39, 42));
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+.containers-servicos {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.servico-container {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.servicos-item {
+	width: 30%;
+	padding: 4px 4px 4px 4px;
+	border-radius: 15px;
+	background-color: rgba(45, 49, 52, 0.8);
+	border: 2px solid rgb(138,43,226);
+	margin: 20px 0 20px 0;
+}
+.servicos-item {
+	transition: 400ms;
+	box-shadow: none;
+}
+.servicos-item:hover {
+	transition: 400ms;
+	box-shadow: 8px 8px 8px black;
+}
+h3.titulo-servicos {
+	font-size: 1.1em;
+	font-weight: 800;
+	width: 100%;
+	background: rgb(138,43,226);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+.container-preco {
+	display: flex;
+	align-items: flex-start;
+}
+.container-preco span {
+	width: 20%;
+	font-size: 0.6em;
+	font-weight: 1000;
+	margin: 4px 4px 4px 4px;
+}
+.preco-servico {
+	margin-bottom: 10px;
+	font-size: 1.6em;
+	font-weight: 1000;
+}
+.texto-servicos {
+	margin-bottom: 10px;
+	font-size: 0.6em;
+	text-align: center;
+}
+.lista-servico {
+	width: 90%;
+	padding: 10px 10px 10px 25px;
+	color: rgb(080, 080, 080);;
+	/*list-style: square;*/
+	list-style: none;
+	background: rgba(222, 222, 222, 1);
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 10px;
+	line-height: 1.6em;
+	font-size: 0.8em;
+	font-weight: 800;
+}
+/*.lista-servico li p {
+
+}*/
+.cheked:before {
+	content: "✔ ";
+	color: green;
+}
+.nao-cheked:before {
+	content: "✘ ";
+	color: red;
+}
+.botao-servico {
+	padding: 10px;
+	background-color: gray;
+	width: 100%;
+	font-size: 0.8em;
+	font-weight: 800;
+	border-radius: 15px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+.botao-servico {
+	transition: 400ms;
+	background-color: gray;
+}
+.botao-servico:hover {
+	transition: 400ms;
+	background-color: green;
+}
+/*.botao-servico img {
+	width: 8%;
+}*/
