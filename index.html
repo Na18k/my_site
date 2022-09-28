@@ -51,7 +51,7 @@
 			</div>
 			<div class="apresentacao-inicio">
 				<img src="https://avatars.githubusercontent.com/u/75281033?v=4" alt="Avatar do GitHub" class="apresentacao-inicio-avatar">
-				<p class="apresentacao-inicio-texto">... Sou um jovem desenvolvedor <b class="marcacao-python">Python</b>, <b class="marcacao-javascript">JavaScript</b>, <b class="marcacao-html">HTML5</b> e <b class="marcacao-css">CSS3</b> tenho 17 anos, e amo programação :) <br><br>  Sou programador desde 2021, onde venho adqurindo conhecimentos com cursos na área e experiências próprias</p>
+				<p class="apresentacao-inicio-texto">... Sou um jovem desenvolvedor de <b id="idade"></b> anos <b class="marcacao-python">Python</b>, <b class="marcacao-javascript">JavaScript</b>, <b class="marcacao-html">HTML5</b> e <b class="marcacao-css">CSS3</b>, amo programação, já a muito tempo envolvido [<a class="link" href="pages/sobre.html">Ver Hitória</a>] <br><br>  Sou programador desde 2021, onde venho adqurindo conhecimentos com cursos na área e experiências próprias; <br><br> Páginas na web, orientção a objeto, manipulção de arquivos, Django, Json, entre outras tecnologias...</p>
 			</div>
 			
 			
@@ -156,7 +156,7 @@
 					</li>
 					<li class="projeto-item">
 						<h3 class="titulo-projetos">CriptoKai</h3>
-						<img src="img/projetos/logo-criptokai.png" alt="" class="logo-projeto">
+						<img src="img/index/criptokai-logo.jpg" alt="" class="logo-projeto">
 						<p class="subtitulo-projetos">Sitema de criptografia de substituição simples, feito com JavaScript, utiliza a base de números.</p>
 						<a href="https://na18k.github.io/CriptoKai/cripto.html" class="button-projeto">Acessar Projeto</a>
 						<a href="https://github.com/Na18k/CriptoKai" class="button-projeto">Acessar Fonte</a>
@@ -358,10 +358,14 @@
 <script type="text/javascript">
 	// Altera e autualiza a data no rodapé Copyrigth
 	var copyright = document.getElementById("ano-copyright");
+	var idade = document.getElementById("idade");
+
 	var dataAtual = new Date();
 	var ano = dataAtual.getFullYear();
 	if(ano !== 2022) {
 		copyright.textContent = `- ${ano}`;
 	}	
+
+	idade.textContent = ano-2004;
 </script>
 </html>
